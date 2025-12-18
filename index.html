@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Crumbs Cake Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Sweet Crumbs</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#cakes">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-light text-dark px-3" href="#order">WhatsApp Order</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Freshly Baked Happiness</h1>
+    <p class="lead">Custom Cakes for Every Occasion</p>
+    <a href="#order" class="btn btn-warning btn-lg mt-3">Order Now</a>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Products</h2>
+
+    <div class="row g-4">
+
+      <!-- Brownie -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Brownie">
+          <div class="p-3 text-center">
+            <h5>Chocolate Brownie</h5>
+            <p class="price">₹120 / piece</p>
+            <button class="btn btn-success btn-sm"
+              onclick="orderProduct('Chocolate Brownie', '₹120 / piece')">
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Piece Cake -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb" alt="Piece Cake">
+          <div class="p-3 text-center">
+            <h5>Chocolate Piece Cake</h5>
+            <p class="price">₹90 / piece</p>
+            <button class="btn btn-success btn-sm"
+              onclick="orderProduct('Chocolate Piece Cake', '₹90 / piece')">
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cup Cake -->
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519869325930-281384150729" alt="Cup Cake">
+          <div class="p-3 text-center">
+            <h5>Vanilla Cup Cake</h5>
+            <p class="price">₹60 / piece</p>
+            <button class="btn btn-success btn-sm"
+              onclick="orderProduct('Vanilla Cup Cake', '₹60 / piece')">
+              Order on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Cakes -->
+<section id="cakes" class="section">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Popular Cakes</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="cake-card">
+          <img src="images/Bd-cake.webp" class="img-fluid">
+          <div class="p-3 text-center">
+            <h5>Birthday Cake</h5>
+            <p>Starting from ₹699</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="cake-card">
+          <img src="images/we-cake.jpg" class="img-fluid">
+          <div class="p-3 text-center">
+            <h5>Wedding Cake</h5>
+            <p>Starting from ₹1999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="cake-card">
+          <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713" class="img-fluid">
+          <div class="p-3 text-center">
+            <h5>Custom Theme Cake</h5>
+            <p>Starting from ₹999</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Customers Say</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>
+            “The cake was absolutely delicious and beautifully designed.
+            Everyone loved it. Highly recommended!”
+          </p>
+          <h6>— Anitha R</h6>
+          <span>Birthday Order</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>
+            “Ordered brownies and cupcakes for a party. Fresh, soft,
+            and delivered on time. Will order again!”
+          </p>
+          <h6>— Karthik M</h6>
+          <span>Party Order</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>
+            “Custom theme cake was exactly as shown in the reference image.
+            Taste and design both were perfect.”
+          </p>
+          <h6>— Priya S</h6>
+          <span>Custom Cake</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Order -->
+<section id="order" class="section bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Custom Cake Order</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="order-form">
+
+          <input type="text" id="name" class="form-control mb-3" placeholder="Your Name">
+          <input type="tel" id="phone" class="form-control mb-3" placeholder="Mobile Number">
+
+          <select id="cakeType" class="form-control mb-3">
+            <option>Birthday Cake</option>
+            <option>Wedding Cake</option>
+            <option>Custom Theme Cake</option>
+          </select>
+
+          <input type="text" id="flavor" class="form-control mb-3" placeholder="Cake Flavor">
+          <input type="number" id="weight" class="form-control mb-3" placeholder="Weight (kg)">
+          <textarea id="message" class="form-control mb-3" placeholder="Message on Cake"></textarea>
+
+          <label class="form-label">Upload Sample Cake Image</label>
+          <input type="file" class="form-control mb-2">
+
+          <small class="text-muted">
+            Note: Please attach the image manually after WhatsApp opens.
+          </small>
+
+          <button onclick="sendWhatsApp()" class="btn btn-success w-100 mt-3">
+            Order via WhatsApp
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Made with Love & Fresh Ingredients</h2>
+  <p>Order today and make your celebration special 🎉</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2025 Sweet Crumbs Cake Studio | All Rights Reserved
+</footer>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
